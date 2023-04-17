@@ -3,8 +3,12 @@ const bcrypt = require("bcryptjs")
 const jwt = require("jsonwebtoken")
 
 const JWT_SECRET = process.env.JWT_SECRET || 'defaultSecretValue';
-
+const userSet = new Set();
 const register = (req, res) => {
+  if(req.body.name != null && userSet.has(req.body.name)) return res.json({
+    message: "Username is already registered" 
+  })
+  userSet.add(req.body.name);
   bcrypt.hash(req.body.password, 10, function(err, hashedPass) {
     if (err) {
       return res.status(500).json({ error: err });
