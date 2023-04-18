@@ -12,7 +12,8 @@ function RegisterForm() {
   async function submit(e) {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/api/register", {name: username, password}).then(res => {
+      await axios.post("http://localhost:8000/api/register", {name: username, password})
+      .then(res => {
         if (res.data.message == "Username is already registered") {
           alert(res.data.message);
         } else {

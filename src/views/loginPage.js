@@ -6,12 +6,21 @@ import axios from "axios";
 import { useNavigate, Link } from 'react-router-dom';
 
 function Login() {
+  const navigate = useNavigate();
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
   async function submit(e) {
     e.preventDefault();
     try {
-        await axios.post("http://localhost:3000/api/login",{username,password})
+        await axios.post("http://localhost:8000/api/login",{username,password})
+        .then(res => {
+            if (res.data.message == "Login Successful!") {
+                console.log("Successfully Logged in");
+                navigate('/home');
+            } else {
+               console.log("Either userName or password not match!");
+            }
+        });
     }catch(err) {
         console.log(err);
     }
@@ -29,7 +38,7 @@ function Login() {
       <form action = "POST">
         <input id= "username" onChange= {(e) => {setUserName(e.target.value)}} type="text" placeholder="Phone email or username" />
         <input type="text" onChange= {(e) => {setPassword(e.target.value)}} placeholder="Password" />
-        <button>Next</button>
+        <button onClick = {submit}>Next</button>
       </form>
       <button>Forget Password</button>
       <p>
