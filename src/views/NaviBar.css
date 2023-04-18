@@ -1,0 +1,93 @@
+.navi-bar {
+  position: absolute;
+  background-color: beige;
+  width: 100vw;
+  height: 8vw;
+}
+
+.home-button {
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  top: 5vw;
+  left: 1vw;
+  width: 8vw;
+}
+
+.signup-button,
+.create-game-button {
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  top: 5vw;
+  width: 8vw;
+  left: 75%;
+  height: 32px;
+}
+
+.login-button,
+.logout-button {
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  top: 5vw;
+  width: 8vw;
+  left: 90%;
+  height: 32px;
+}
+
+.search-button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  top: 5vw;
+  width: 8vw;
+  left: 90%;
+  height: 32px;
+}
+
+
+.search {
+
+  border: white solid 1px;
+  background-color: white;
+  border-radius: 2px;
+  width: 15vw;
+  height: 32px;
+  font-size: 20px;
+  padding: 0;
+}
+
+.search-bar {
+  position: absolute;
+  background-color: white;
+  left: 10%;
+  top: 5vw;
+}
+
+.login-button:hover,
+.logout-button:hover,
+.signup-button:hover,
+.home-button:hover,
+.create-game-button:hover {
+  border: white solid 5px;
+}
+
+.username-text {
+  color: white;
+  font-size: 10px;
+}
+
+.username-display {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  top: 10px;
+  left: 90%;
+  align-items: center;
+}
+
+
