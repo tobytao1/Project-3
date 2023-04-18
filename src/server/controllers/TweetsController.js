@@ -27,10 +27,24 @@ const getTweet = (req,res) => {
     }) )
 }
 
+const getPersonalTweet = (req,res) => {
+    const userName = req.body.user;
+    Tweets.find({user:userName})
+    .then((response) => {
+        res.json(
+            {response}
+        )
+    })
+    .catch((e) => res.json({
+        message: e
+    }) )
+}
+
 const createTweet = (req, res) => {
     const Tweet = new Tweets({
         content: req.body.content,
-        imageUrl: req.body.imageUrl
+        imageUrl: req.body.imageUrl,
+        user:req.body.user,
     })
     Tweet.save()
     .then((response) => {
@@ -39,6 +53,7 @@ const createTweet = (req, res) => {
         })
     })
     .catch((e) => {
+        console.log(e);
         res.json({
             message: "An error occurred!"
         })
@@ -85,5 +100,6 @@ module.exports = {
     getTweet,
     updateTweet,
     createTweet,
-    deleteTweet
+    deleteTweet,
+    getPersonalTweet
 } 

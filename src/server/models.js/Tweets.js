@@ -9,6 +9,9 @@ const TweetsSchema = new Schema({
     imageUrl: {
         type: String,
         trim: true
+    },
+    user: {
+        type: String,
     }
 },{timestamps:true})
 
