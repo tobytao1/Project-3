@@ -2,8 +2,9 @@ import React, {useState} from 'react'
 import logo from "../assets/twitter-1-svgrepo-com.svg"
 import googleLog from "../assets/google-color-svgrepo-com.svg"
 import axios from "axios";
-
+import NavBar from "./naviBar";
 import { useNavigate, Link } from 'react-router-dom';
+import NaviBar from "./naviBar";
 
 function Login() {
   const [username, setUserName] = useState('');
@@ -18,6 +19,7 @@ function Login() {
   }
   return (
     <div className="logo-box">
+
       <img src={logo} alt="apple" className="logo" />
       <h2>Sign In to Twitter</h2>
       <button>

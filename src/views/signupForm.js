@@ -3,6 +3,8 @@ import axios from 'axios'
 import logo from "../assets/twitter-1-svgrepo-com.svg"
 import googleLog from "../assets/google-color-svgrepo-com.svg"
 import { useNavigate, Link } from 'react-router-dom';
+import NavBar from "./naviBar";
+import NaviBar from "./naviBar";
 
 function RegisterForm() {
   const navigate = useNavigate();

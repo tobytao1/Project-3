@@ -1,14 +1,14 @@
 .navi-bar {
   position: absolute;
-  background-color: beige;
+  background-color: skyblue;
   width: 100vw;
   height: 8vw;
 }
 
 .home-button {
   position: absolute;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: skyblue;
   font-size: 20px;
   top: 5vw;
   left: 1vw;
@@ -18,8 +18,8 @@
 .signup-button,
 .create-game-button {
   position: absolute;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: skyblue;
   font-size: 20px;
   top: 5vw;
   width: 8vw;
@@ -30,8 +30,8 @@
 .login-button,
 .logout-button {
   position: absolute;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: skyblue;
   font-size: 20px;
   top: 5vw;
   width: 8vw;
@@ -40,8 +40,8 @@
 }
 
 .search-button {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: skyblue;
   font-size: 20px;
   top: 5vw;
   width: 8vw;
@@ -51,7 +51,6 @@
 
 
 .search {
-
   border: white solid 1px;
   background-color: white;
   border-radius: 2px;
@@ -72,8 +71,9 @@
 .logout-button:hover,
 .signup-button:hover,
 .home-button:hover,
+.search-button:hover
 .create-game-button:hover {
-  border: white solid 5px;
+  border: white solid 3px;
 }
 
 .username-text {

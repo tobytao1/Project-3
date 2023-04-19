@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import {useNavigate} from 'react-router-dom';
 import {Axios} from "axios";
 import {useLocation} from "react-router";
 import "./NaviBar.css";
 
 const NavBar = (props) => {
-    const { state } = useLocation();
+    const {state} = useLocation();
     const [username, setUsername] = useState(null);
 
     const [query, setQuery] = useState(null);
 
     const navigate = useNavigate();
 
-    useEffect(() => {}, [state]);// get sign in or not
+    useEffect(() => {
+    }, [state]);// get sign in or not
 
     function logout() {
         console.log("logout called react"); //log out
@@ -24,10 +25,9 @@ const NavBar = (props) => {
         }
         navigate("/search/" + encodeURIComponent(query));
     }
+
     return (
         <div className="navi-bar">
-
-
             <a href="/">
                 <button className="home-button">Home</button>
             </a>
@@ -81,7 +81,6 @@ const NavBar = (props) => {
                 )}
             </div>
         </div>
-
     );
 };
 
