@@ -1,0 +1,56 @@
+.sidebar {
+    flex: 0.3;
+    padding: 1rem 2rem;
+}
+.option{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button {
+    background-color: #26a7de!important;
+    border: none !important;
+    color: white !important;
+    font-weight: 800 !important;
+    font-size: 1.2rem !important;
+    text-transform: inherit !important;
+    border-radius: 20px !important;
+    height: 53px !important;
+    width: 230px;
+    margin-top: 30px !important;
+    margin-left: 0px !important;
+    margin-right: 50px !important;
+  }
+#main {
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+.profile{
+    position: fixed;
+    bottom: 5;
+    left:40px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  margin-left: 8px;
+}
+
+.profile {
+    display: flex;
+    direction: column;
+}
+.name {
+  margin-left: 8px;
+}
+.stack {
+    margin-top: 50px;
+}
+
+#out {
+  margin-left: 40px;
+}
