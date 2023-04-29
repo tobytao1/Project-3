@@ -16,16 +16,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Runs this code to start a server in the backend ###
-
-### `cd backend` and then `npm run dev`
-
-
-### Then open a new Terminal, use the code
-
-### `cd frontend` and then `npm start`
-
+### `npm run build`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
